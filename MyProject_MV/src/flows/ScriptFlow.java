@@ -43,7 +43,7 @@ public class ScriptFlow {
 			browser.webBrowserInvoke("Chrome", "https://www.usaa.com/inet/ent_logon/Logon?redirectjsp=true");
 			browser.buttonClick("//*[text()='Advice']", "text");
 			browser.buttonClick("//*[text()='Retirement']", "text");
-			browser.buttonClick("//*/span[1]/div[1]/div[2]/div[1]/div[3]/a[1]", "Xpath");
+			browser.buttonClick("How Much Retirement Savings You Will Need", "text");
 			browser.inputText("//*[@id='idf']", "Xpath", "65");
 			
 		/*	browser.inputText("//input[@name='j_username']", "Xpath", "maruthi.veluru");

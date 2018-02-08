@@ -17,7 +17,7 @@ public class LoginPage
 	{
 		browser.webBrowserInvoke("Ie", "https://www.usaa.com/inet/ent_logon/Logon?redirectjsp=true");
 	}
-	public void logOnLinkClick()
+	public void logOnLinkClick() throws InterruptedException
 	{
 		browser.buttonClick("//*[@id=\'usaa-my-profile\']/span", "Xpath");
 	}
@@ -32,7 +32,7 @@ public class LoginPage
 		browser.inputText("#usaaPass", "Css", "OMsamdp@2006");
 	}
 	
-	public void logOnButtonClick()
+	public void logOnButtonClick() throws InterruptedException
 	{
 		browser.buttonClick("#login", "Css");
 	}
@@ -42,7 +42,7 @@ public class LoginPage
 		browser.inputText("#pinTextField", "Css", "4571");
 	}
 	
-	public void pinNextButtonClick()
+	public void pinNextButtonClick() throws InterruptedException
 	{
 		browser.buttonClick("#ida > span", "Css");
 	}

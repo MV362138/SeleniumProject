@@ -122,7 +122,7 @@ public class BrowserLaunch
 		
 	}
 
-	public void buttonClick(String Object, String ObjectType) 
+	public void buttonClick(String Object, String ObjectType) throws InterruptedException 
 	{
 		if(ObjectType=="ID")
 			{
@@ -194,6 +194,7 @@ public class BrowserLaunch
 						System.out.println("provided Object"+ObjectType+ "is present in the Page");
 						driver.findElement(By.linkText(Object)).click();
 						System.out.println("provided button/Link is clicked");
+						driver.findElement(By.linkText(Object)).wait();
 					} 
 				}
 				else
